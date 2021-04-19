@@ -1,0 +1,233 @@
+:root {
+	--color-primary: rgb(66, 153, 170);
+	--color-secondary: rgb(86, 199, 221);
+	--color-grey: lightgrey;
+	--color-white: rgb(255, 255, 255);
+	--color-primary-for-alpha: 66, 153, 170;
+	--color-secondary-for-alpha: 86, 199, 221;
+	--color-white-for-alpha: 255, 255, 255;
+	--font-heading: "Bowlby One SC", cursive;
+	--font-primary: "Anton", sans-serif;
+	--font-secondary: "Contrail One", cursive;
+	font-size: 16px;
+}
+body {
+	background-image: linear-gradient(lightblue 75%, 90%, rgb(247, 255, 99) 100%);
+	color: var(--color-white);
+	font-size: 1rem;
+	font-family: var(--font-primary);
+	letter-spacing: .05rem;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#sunshine {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: -5rem;
+	left: 0;
+	z-index: -2;
+	background-image: radial-gradient(circle at left top, yellow, white, transparent, transparent 100%);
+}
+.container {
+	background-image: repeating-linear-gradient(to right, var(--color-secondary) 0 9.09%, var(--color-white) 9.09% 18.18%);
+	width: 82%;
+	min-width: 350px;
+	max-width: 1000px;
+	margin: 5rem auto;
+	padding: 1rem;
+	border: .5rem solid var(--color-white);
+	border-radius: .2rem;
+	box-sizing: border-box;
+}
+
+header {
+	background-color: var(--color-primary);
+	width: 50%;
+	margin: 3rem auto;
+	text-align: center;
+	padding: .3rem .75rem;
+	border: .5rem solid var(--color-grey);
+	border-radius: .2rem;
+	font-size: 1.2rem;
+}
+h1 {
+	font-family: var(--font-heading);
+	margin-bottom: -1rem;
+}
+p {
+	font-size: 1.35em;
+}
+
+#survey-form {
+	background-color: var(--color-primary);
+	border: .5rem solid var(--color-grey);
+	border-radius: .2rem;
+	margin: 0 2rem 4rem 2rem;
+	padding: 2.5rem;
+	font-size: 1.2rem;
+}
+.form-group {
+	margin: 0 0 2rem 0;
+}
+label, button {
+	display: flex;
+	margin: 0 0 .75rem 0;
+	font-size: 1.35em;
+}
+input, select, .radio-label, textarea {
+	font-size: inherit;
+	caret-color: var(--color-white);
+}
+textarea {
+	caret-color: var(--color-primary);
+}
+select:invalid, .radio-label, .check-label, ::placeholder {
+	color: rgba(var(--color-white-for-alpha), .7);
+}
+input, select, .radio-label, textarea, button, ::placeholder {
+	font-family: var(--font-secondary);
+	letter-spacing: inherit;
+}
+.form-control {
+	display: block;
+	width: 80%;
+	padding: .25rem;
+	color: var(--color-white);
+	background-color: var(--color-primary);
+	border-style: solid;
+	border-width: 0 0 3px 0;
+	border-color: var(--color-white);
+	border-radius: 0;
+}
+.form-control:focus {
+	outline: 0;
+}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.dropdown {
+	width: 25%;
+	min-width: 10rem;
+}
+.p-form-question {
+	margin: 0 0 .75rem 0;
+}
+.button-and-label, .check-and-label {
+	margin-bottom: .5rem;
+}
+.radio-button, .check-box {
+	width     : 0;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 0;
+	position: absolute;
+}
+.radio-label:hover, .check-label:hover,  input[type=radio]:checked + label, input[type=checkbox]:checked + label {
+	color: var(--color-white);
+}
+.check-label {
+	margin: 0;
+	width: 5rem;
+	justify-content: space-between;
+	align-items: center;
+}
+input[type=radio]:not(old) + label > span, input[type=checkbox]:not(old) + label > span {
+	display: flex;
+  width: .7rem;
+  height: .7rem;
+  border: 0.1em solid var(--color-grey);
+  background: var(--color-white);
+}
+input[type=radio]:not(old):checked + label > span > span, input[type=checkbox]:not(old):checked + label > span > span {
+	display: block;
+  width: 0.31rem;
+  height: 0.31rem;
+	margin: auto;
+	border: .15rem solid transparent;
+	background: var(--color-secondary);
+}
+input[type=checkbox]:not(old) + label > span, input[type=checkbox]:not(old):checked + label > span > span {
+  border-radius: 0.1em;
+}
+input[type=radio]:not(old) + label > span,
+input[type=radio]:not(old):checked + label > span > span {
+	border-radius: 50%;
+}
+input[type=radio]:not(old) + label > span {
+	margin: auto .75rem auto 0;
+}
+.to-align-span {
+	background: transparent !important;
+	border: .1em solid transparent !important;
+}
+#sins {
+	white-space: pre;
+	color: rgb(224, 0, 0);
+	letter-spacing: .75rem;
+	font-size: 1.5em;
+}
+#textarea {
+	border-width: 3px;
+	padding: .7rem;
+	height: 6rem;
+	background-color: var(--color-white);
+	color: var(--color-primary);
+	resize: none;
+	border-radius: .15rem;
+}
+#textarea::placeholder {
+	color: rgba(var(--color-primary-for-alpha), .7);
+}
+button {
+	margin: 3.5rem auto 2.25rem auto;
+	padding: .5rem .7rem;
+	background-color: rgb(135, 0, 0);
+	color: rgb(224, 0, 0);
+	border: 2px solid rgb(224, 0, 0);
+	border-radius: .2rem;
+}
+/************/
+/************/
+@media (max-width: 650px) {
+	:root {
+		font-size: 12px;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	.container {
+		width: 100%;
+		margin: 0;
+	}
+	header {
+		width: 70%;
+		font-size: 1.1rem;
+	}
+	#survey-form {
+		margin: 0 1rem 4rem 1rem;
+	}
+	#textarea {
+		height: 5.5rem;
+	}
+}
+@media (min-width: 651px) and (max-width: 970px) {
+	:root {
+		font-size: 13px;
+	}
+	header {
+		width: 65%;
+		font-size: 1.1rem;
+	}
+}
+@media (min-width: 971px) and (max-width: 1100px) {
+	:root {
+		font-size: 14px;
+	}
+}

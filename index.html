@@ -1,0 +1,90 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bowlby+One+SC&family=Contrail+One&display=swap" rel="stylesheet">
+<div id="sunshine"></div>
+<div class="container">
+	<header>
+			<h1 id="title">Come to the beach!</h1>
+			<p id="description">Ready to have an awesome day in the sun!?</p>
+		</header>
+	
+		<form id="survey-form">
+			<div class="form-group">
+				<label id="name-label" for="name">Give the beach your name</label>
+				<input type="text" name="name" id="name" class="form-control" placeholder="What is it" required>
+			</div>
+			<div class="form-group">
+				<label id="email-label" for="email">It wants your email too</label>
+				<input type="email" name="email" id="email" class="form-control" placeholder="give it email   (yours)" required>
+			</div>
+			<div class="form-group">
+				<label id="number-label" for="number">n umber</label>
+				<input type="number" name="number" id="number" class="form-control" placeholder="choose one" autocomplete="off" min=-99999 max=999999 required>
+			</div>
+			<div class="form-group">
+				<label id="reason-label" for="reason">Why did you want to come to the beach?!</label>
+				<select id="dropdown" name="reason" class="form-control dropdown" required>
+					<option id="default-option" hidden selected value="">Pick one!</option>
+					<option value="1">It calls to me</option>
+					<option value="2">It calls to me</option>
+					<option value="3">It calls to me</option>
+					<option value="4">It calls to me</option>
+					<option value="5">It calls to me</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<p class="p-form-question">What are you planning to do at the beach?</p>
+				<div class="button-and-label">
+					<input type="radio" name="plans" id="obey" value="obey" class="radio-button" required>
+					<label id="obey-label" for="obey" class="radio-label"><span><span></span></span>Obey</label>
+				</div>
+				<div class="button-and-label">
+					<input type="radio" name="plans" id="worship" value="worship" class="radio-button" required>
+					<label id="worship-label" for="worship" class="radio-label"><span><span></span></span>Worship</label>
+				</div>
+				<div class="button-and-label">
+					<input type="radio" name="plans" id="sacrifice" value="sacrifice" class="radio-button" required>
+					<label id="sacrifice-label" for="sacrifice" class="radio-label"><span><span></span></span>Sacrifice</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<p class="p-form-question">Submit yourself to the Beach's will</p>
+				<div class="check-and-label">
+					<input type="checkbox" name="submit" id="s" value="s" class="check-box">
+					
+					<label id="s-label" for="s" class="check-label"><span><span></span></span>S<span class="to-align-span"></span></label>
+					<div class="to-align-submit"></div>
+				</div>
+				<div class="check-and-label">
+					<input type="checkbox" name="submit" id="u" value="u" class="check-box">
+					<label id="u-label" for="u" class="check-label"><span><span></span></span>U<span class="to-align-span"></span></label>
+					<div class="to-align-submit"></div>
+				</div>
+				<div class="check-and-label">
+					<input type="checkbox" name="submit" id="b" value="b" class="check-box">
+					<label id="b-label" for="b" class="check-label"><span><span></span></span>B<span class="to-align-span"></span></label>
+					<div class="to-align-submit"></div>
+				</div>
+				<div class="check-and-label">
+					<input type="checkbox" name="submit" id="m" value="m" class="check-box">
+					<label id="m-label" for="m" class="check-label"><span><span></span></span>M<span class="to-align-span"></span></label>
+				</div>
+				<div class="check-and-label">
+					<input type="checkbox" name="submit" id="i" value="i" class="check-box">
+					<label id="i-label" for="i" class="check-label"><span><span></span></span>I<span class="to-align-span"></span></label>
+				</div>
+				<div class="check-and-label">
+					<input type="checkbox" name="submit" id="t" value="t" class="check-box">
+					<label id="t-label" for="t" class="check-label"><span><span></span></span>T<span class="to-align-span"></span></label>
+					<div class="to-align-submit"></div>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>Reveal your<span id="sins"> sins</span></label>
+				<textarea id="textarea" class="form-control" placeholder="Ya na kadishtu nilgh'ri stell'bsna Nyogtha,
+K'yarnak phlegethor l'ebumna syha'h n'ghft,
+Ya hai kadishtu ep r'luh-eeh Nyogtha eeh,
+s'uhn-ngh athg li'hee orr'e syha'h."></textarea>
+			</div>
+			<button id="submit">Giveth thyself over</button>
+		</form>
+</div>
